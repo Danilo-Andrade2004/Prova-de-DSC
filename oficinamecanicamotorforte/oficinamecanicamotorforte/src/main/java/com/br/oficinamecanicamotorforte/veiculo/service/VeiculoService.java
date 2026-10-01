@@ -7,7 +7,6 @@ import com.br.oficinamecanicamotorforte.veiculo.dto.VeiculoResponseDTO;
 import com.br.oficinamecanicamotorforte.veiculo.exception.VeiculoException;
 import com.br.oficinamecanicamotorforte.veiculo.model.Veiculo;
 import com.br.oficinamecanicamotorforte.veiculo.repository.VeiculoRepository;
-
 import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor

@@ -16,16 +16,14 @@ import com.br.oficinamecanicamotorforte.veiculo.dto.VeiculoResponseDTO;
 import com.br.oficinamecanicamotorforte.veiculo.model.Veiculo;
 import com.br.oficinamecanicamotorforte.veiculo.service.VeiculoService;
 import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/veiculos")
 public class VeiculoController {
     
     private final VeiculoService service;
-
-    public VeiculoController(VeiculoService service){
-        this.service = service;
-    }
 
     @GetMapping
     public List<Veiculo> listar(){

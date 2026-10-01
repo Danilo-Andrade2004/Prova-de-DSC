@@ -9,5 +9,4 @@ public class OficinamecanicamotorforteApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(OficinamecanicamotorforteApplication.class, args);
 	}
-
 }
