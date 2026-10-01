@@ -1,10 +1,16 @@
 package com.br.oficinamecanicamotorforte.veiculo.repository;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import com.br.oficinamecanicamotorforte.veiculo.model.Veiculo;
 
 @Repository 
 public interface VeiculoRepository extends JpaRepository<Veiculo, Long> {
-    
+    List<Veiculo> findById(String id);
+    List<Veiculo> findByModeloList(Double modelo);
+    List<Veiculo> findByPlaca(String placa);
+    List<Veiculo> findByAnoFabricacao(Integer anoFabricacao);
+    List<Veiculo> findByTipo(String tipo);
 }
